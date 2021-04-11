@@ -59,7 +59,10 @@ a:hover {
 }
 
 #google-image {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  width: 272px;
+  height: 92px;
 }
 
 .search-box {
@@ -105,6 +108,11 @@ a:hover {
 
 .spann img {
   color: #9aa0a6;
+}
+
+.search-voice img {
+  width: 20px;
+  height: 20px;
 }
 
 .spann2 {
@@ -197,4 +205,111 @@ footer {
 .other-links a {
   margin-left: 25px;
   color: #70757a;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .footer-links,
+  .other-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-country {
+    font-size: 1.5vw;
+  }
+
+  .footers {
+    font-size: 14px;
+    padding: 60px 15px 15px 15px;
+    justify-content: space-evenly;
+  }
+
+  .carbon-text {
+    position: absolute;
+    bottom: 45px;
+    left: 42%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-country {
+    font-size: 14px;
+  }
+
+  .footers {
+    font-size: 13px;
+    padding: 60px 15px 15px 15px;
+    justify-content: space-evenly;
+  }
+
+  .carbon-text {
+    position: absolute;
+    bottom: 45px;
+    left: 42%;
+    margin: 10px 0;
+  }
+
+  #google-image {
+    width: 210px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .search-box {
+    min-width: 340px;
+  }
+
+  .footer-country {
+    font-size: 13px;
+  }
+
+  .footers {
+    font-size: 11px;
+    padding: 40px 10px 10px 25px;
+    justify-content: space-evenly;
+  }
+
+  .carbon-text {
+    position: absolute;
+    bottom: 45px;
+    left: 30%;
+    margin: 10px 0;
+  }
+
+  #google-image {
+    width: 210px;
+    height: 70px;
+  }
+
+  .other-text {
+    font-size: 11px;
+  }
+
+  .spann {
+    bottom: 56px;
+    left: -10px;
+  }
+
+  .spann2 {
+    bottom: 57px;
+    left: 280px;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+  .footers {
+    font-size: 11px;
+    padding: 60px 10px 10px 10px;
+    justify-content: space-evenly;
+  }
+
+  .carbon-text {
+    position: absolute;
+    bottom: 45px;
+    left: 230px;
+  }
 }
